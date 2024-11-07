@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%
+}
+
+.bgimg {
+  background-image: url('pics/cms.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1{
+text-shadow: 2px 2px 5px #FF0000;
+}
+
+.text{
+color: beige;
+}
+
+P{
+text-shadow: 2px 2px 5px #FF0000;
+}
+
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+  <img src="webpages/imgs/gengar.png" width="120px">
+  </div>
+  <div class="middle">
+  <h1>WEBSITE AVAILABLE SOON! THANK YOU FOR YOUR PATIENCE</h1>
+  <hr style="margin:auto;width:40%">
+  <p id="demo" style="font-weigth:bold;font-size:30px"></p>
+  </div>
+  <div class="bottomleft">
+  <center><p class="text">My website is currently building and under development to provide a seemless and a smooth experience, kindly return when the countdown timer is up, thank you for your understanding.</p></center>
+  </div>
+</div>
+
+<script>
+
+var countDownDate = new Date("October 30, 2023 13:59:00").getTime();
+
+var countdownfunction = setInterval(function() {
+
+  
+  var now = new Date().getTime();
+  
+  
+  var distance = countDownDate - now;
+  
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "Please wait for further updates";
+  }
+}, 10);
+</script>
+
+</body>
+</html>

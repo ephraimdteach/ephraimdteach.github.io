@@ -1,0 +1,276 @@
+<html>
+<head>
+	<title>My Personal Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="imgs/gengar.png" type="image/png">
+<meta charset="UTF-8">
+</head>
+<style>
+
+header{
+background-image: url('../pics/header1.jpg');
+}
+
+body{
+background-color: #FFE3B5;
+}
+
+h1 {
+font-size: 50px;
+font-family: fantasy;
+letter-spacing: 7px;
+text-align: center;
+}
+
+h2{
+margin: 0;
+letter-spacing: 3px;
+background-color: #FFD580;
+text-align: center;
+word-spacing: 10px ;
+padding:10px;
+}
+
+h2 a {
+text-decoration: none;
+color: black;
+}
+.container{
+display: flex;
+justify-content: center;
+}
+.img{
+width: 70px;
+padding: 9px;
+border-radius:20px;
+}
+
+footer{
+font-size: 24px;
+background-color: #FFD580;
+text-align: center;
+}
+
+.img, img, h1, h2, footer, header{
+animation-name: fadeIn;
+animation-duration: 3s;
+}
+.p{
+animation-name: fadeIn;
+animation-duration: 7s;
+}
+        
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FFD580;
+            min-width: 160px;
+            
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #FFC94C;
+        }
+
+p{
+padding-right: 290;
+padding-left: 290;
+font-size: 22;
+text-align: justify;
+text-justify: inter-word;
+}
+
+
+img{
+transition: transform .25s ease;
+}
+
+img:hover{
+transform: scale(1.5);
+}
+
+h5 {
+  display: none;
+  margin: 0;
+  letter-spacing: 1px;
+  background-color: #FFD580;
+  text-align: center;
+  word-spacing: 10px;
+  padding: 10px;
+}
+
+h5 a {
+  text-decoration: none;
+  color: black;
+font-size: 1.6em;
+}
+
+@media only screen and (max-width: 414px){
+ h5 {
+    display: block; 
+  }
+
+h2{
+display: none;
+}
+
+.container{
+display: flex;
+justify-content: center;
+}
+
+.img{
+max-width: 50px;
+padding: 9px;
+border-radius:20px;
+}
+
+img{
+max-width: 100%;
+}
+
+p{
+font-size: 22px;
+padding-right: 5px;
+padding-left: 5px;
+}
+
+img{
+transition: none;
+}
+
+img:hover{
+transform: none;
+}
+.img{
+max-width: 45px;
+padding: 3px;
+border-radius:20px;
+}
+
+}
+</style>
+
+<body>
+
+<header>
+<h1> My Personal Website</h1>
+<div class="container">
+
+<a href="https://www.facebook.com/usopp.0401" target="_blank"><img src="../header/facebook.png" class="img"></a>
+<a href="https://www.youtube.com/@strife2247" target="_blank">
+<img src="../header/youtube.png" class="img"></a>
+<a href="https://www.reddit.com/user/kozukinemon" target="_blank">
+<img src="../header/reddit.png" class="img"></a>
+<a href="https://instagram.com/hnye.pkz?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+<img src="../header/instagram.png" class="img"></a>
+<a href="https://open.spotify.com/user/i1jnfsvnicyabyj4obxza5k4k?si=3f3af1c2441f4875" target="_blank">
+<img src="../header/spotify.webp" class="img"></a>
+<a href="https://myanimelist.net/profile/kusogeking_" target="_blank">
+<img src="../header/mal.png" class="img"></a>
+</div>
+</header>
+
+<h2>
+<a href="../index.html">Home</a><a>&nbsp;|</a>
+<div class="dropdown">
+            <span>About Me▼ |</span>
+            <div class="dropdown-content">
+                <a href="profile.html">Profile</a>
+                <a href="autobiography.html">Autobiography</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+<a href="experience.html">Experience</a><a>&nbsp;|</a>
+<a href="education.html">Education</a><a>&nbsp;|</a>
+<a href="skills.html">Skills</a><a>&nbsp;|</a>
+<div class="dropdown">
+            <span>Interests▼ |</span>
+            <div class="dropdown-content">
+                <a href="music.html">Music</a>
+                <a href="videos.html">Videos</a>
+		<a href="hobbies.html">Hobbies</a>
+            </div>
+        </div>
+<a href="contacts.html">Contacts</a>
+</h2>
+<h5><center>
+<a href="../index.html">Home</a><br>
+<a href="profile.html">Profile</a>
+<a href="autobiography.html">Autobiography</a>
+<a href="gallery.html">Gallery</a><br>
+<a href="experience.html">Experience</a><br>
+<a href="education.html">Education</a><br>
+<a href="skills.html">Skills</a><br>
+<a href="music.html">Music</a>
+<a href="videos.html">Videos</a>
+<a href="hobbies.html">Hobbies</a><br>
+<a href="contacts.html">Contacts</a><br>
+</center></h5>
+
+<div class="img1">
+
+</div>
+<br>
+<center><img border="2" src="../pics/autobio/auto2.jpeg" width="450"></center>
+
+<div class="p">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My Senior High School experience, however, was short-lived due to the Covid-19 pandemic. Nevertheless, it remains a memorable year for me because the clique I have now has remained the same since that time. We began 12th Grade with a blast, gathering together for the first time in years after being confined to our homes. We celebrated, although the majority of us don't really drink alcohol, so we focused on cooking and eating to our hearts' content. We played video games, relaxed, and collaborated on school activities, helping each other when difficulties arose. Fortunately, all of us graduated and moved on to college, where we are now striving to pursue our dreams. We are still a tight-knit group because our homes are close, and we continue to meet and chat every day. </p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moving on to my college life, things are going well. I haven't failed any subjects yet, and I've been consistently performing at a satisfactory level. Overall, I'm doing quite well academically. The activities are manageable, and I have the opportunity to pursue the things I love, primarily gaming. However, what's even more important to me is that I have time for my keyboard hobby.</p>
+</div>
+
+<center><img border="2" src="../pics/autobio/auto4.jpg" width="450"></center>
+
+<div class="p">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Though it can get quite expensive when you dive deep into it, customizing keyboards is a delicate and intricate activity. I have to carefully measure the amount of lube I need to apply, determine the thickness of the foams I want to integrate, decide on the number of layers of tape to use, and most importantly, allocate time for customizing my build. Even a basic, stock keyboard, often referred to as a "barebone," without any additional customization can be time-consuming and expensive.
+</div>
+
+<center><img border="2" src="../pics/autobio/auto3.jpg" width="450"></center>
+
+<div class="p">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Buying all the necessary materials, such as preferred switches, keycaps, PE Foam, Krytox 205g0, EVA Foam, GPL 105g0, Trybosis 3203, and dielectric grease, adds up quickly. A typical 67% keyboard has 66 keys, which means I need 66 switches to fill the entire board. Lubing all 66 switches takes me an average of 4 to 6 hours, including the time needed for tuning the stabilizers and testing. It's undeniably a time-consuming hobby, but when I'm engrossed in it, I feel relaxed and fulfilled. It's almost therapeutic. Even though I don't always achieve the exact results I aim for, it's essential to appreciate what I have and learn from my mistakes. I strive not to repeat those same mistakes and continuously raise the bar for a better quality of craftsmanship.</p></div>
+
+<center>
+<a href="autobiography.html">1<a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+<a href="autobiography2.html">2<a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+</center>
+
+
+<footer>
+
+<h5>© Ephraim Jeremy Taclan - All rights reserved | 2023</h5>
+<a href="https://ourdisclaimer.com/?i=ejzeltron.github.io"><img src="https://ourdisclaimer.com/ourdisclaimer.gif" width="80" height="15" alt="Our Disclaimer" /></a>
+</footer>
+</body>
+</html>

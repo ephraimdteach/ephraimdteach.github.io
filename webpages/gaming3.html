@@ -1,0 +1,338 @@
+<html>
+<head>
+
+	<title>My Personal Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="imgs/gengar.png" type="image/png">
+<meta charset="UTF-8">
+</head>
+<style>
+header{
+background-image: url('../pics/header1.jpg');
+}
+
+body{
+background-color: #FFE3B5;
+}
+
+h1 {
+font-size: 50px;
+font-family: fantasy;
+letter-spacing: 7px;
+text-align: center;
+}
+
+h2{
+margin: 0;
+letter-spacing: 3px;
+background-color: #FFD580;
+text-align: center;
+word-spacing: 10px ;
+padding:10px;
+}
+
+h2 a {
+text-decoration: none;
+color: black;
+}
+
+.container{
+display: flex;
+justify-content: center;
+}
+.img{
+width: 70px;
+padding: 9px;
+border-radius:20px;
+}
+
+footer{
+font-size: 24px;
+background-color: #FFD580;
+text-align: center;
+}
+
+.img, h1, h2, footer, header, h3, .side-panel{
+animation-name: fadeIn;
+animation-duration: 3s;
+}
+.animation{
+animation-name: fadeIn;
+animation-duration: 5s;
+}
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FFD580;
+            min-width: 160px;
+            
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #FFC94C;
+        }
+
+.container1 {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        .column {
+            flex-basis: calc(33.33% - 20px); 
+            padding: 20px;
+            margin-right: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .column:last-child {
+            margin-right: 0;
+        }
+
+.img{
+transition: transform .25s ease;
+}
+
+.img:hover{
+transform: scale(1.5);
+}
+
+.dropdown2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown2-content {
+            display: none;
+            position: absolute;
+            background-color: #FFD580;
+            min-width: 160px;
+            
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown2:hover .dropdown-content {
+            display: block;
+font-size: 25px;
+        }
+
+        .dropdown2-content a {
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+
+        }
+
+        .dropdown2-content a:hover {
+            background-color: #FFC94C;
+        }
+
+
+h5 {
+  display: none;
+  margin: 0;
+  letter-spacing: 1px;
+  background-color: #FFD580;
+  text-align: center;
+  word-spacing: 10px;
+  padding: 10px;
+}
+
+h5 a {
+  text-decoration: none;
+  color: black;
+font-size: 1.6em;
+}
+
+@media only screen and (max-width: 414px) {
+ h5 {
+    display: block; 
+  }
+
+h2{
+display: none;
+}
+
+.container{
+display: flex;
+justify-content: center;
+}
+
+.img{
+max-width: 45px;
+padding: 3px;
+border-radius:20px;
+}
+
+
+.container1{
+display: block;
+justify-content: center;
+max-width: 1200px;
+margin: 0;
+padding: 20px;}
+}
+
+ .column {
+        width: calc(90% - 16px);
+        margin-right: 8px;
+        padding: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .column:last-child {
+        margin-right: 0;
+    }
+
+h3{
+font-size: 30px;
+}
+
+video{
+max-width: 100%;
+}
+}
+</style>
+
+<body>
+
+<header>
+<h1> My Personal Website</h1>
+<div class="container">
+
+<a href="https://www.facebook.com/usopp.0401" target="_blank"><img src="../header/facebook.png" class="img"></a>
+<a href="https://www.youtube.com/@strife2247" target="_blank">
+<img src="../header/youtube.png" class="img"></a>
+<a href="https://www.reddit.com/user/kozukinemon" target="_blank">
+<img src="../header/reddit.png" class="img"></a>
+<a href="https://instagram.com/hnye.pkz?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+<img src="../header/instagram.png" class="img"></a>
+<a href="https://open.spotify.com/user/i1jnfsvnicyabyj4obxza5k4k?si=3f3af1c2441f4875" target="_blank">
+<img src="../header/spotify.webp" class="img"></a>
+<a href="https://myanimelist.net/profile/kusogeking_" target="_blank">
+<img src="../header/mal.png" class="img"></a>
+</div>
+</header>
+
+<h2>
+<a href="../index.html">Home</a><a>&nbsp;|</a>
+<div class="dropdown">
+            <span>About Me▼ |</span>
+            <div class="dropdown-content">
+                <a href="profile.html">Profile</a>
+                <a href="autobiography.html">Autobiography</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+<a href="experience.html">Experience</a><a>&nbsp;|</a>
+<a href="education.html">Education</a><a>&nbsp;|</a>
+<a href="skills.html">Skills</a><a>&nbsp;|</a>
+<div class="dropdown">
+            <span>Interests▼ |</span>
+            <div class="dropdown-content">
+                <a href="music.html">Music</a>
+                <a href="videos.html">Videos</a>
+		<a href="hobbies.html">Hobbies</a>
+            </div>
+        </div>
+<a href="contacts.html">Contacts</a>
+</h2>
+<h5><center>
+<a href="../index.html">Home</a><br>
+<a href="profile.html">Profile</a>
+<a href="autobiography.html">Autobiography</a>
+<a href="gallery.html">Gallery</a><br>
+<a href="experience.html">Experience</a><br>
+<a href="education.html">Education</a><br>
+<a href="skills.html">Skills</a><br>
+<a href="music.html">Music</a>
+<a href="videos.html">Videos</a>
+<a href="hobbies.html">Hobbies</a><br>
+<a href="contacts.html">Contacts</a><br>
+</center></h5>
+<center>
+<div class="dropdown2">
+            <h3>Interests▼</h3>
+            <div class="dropdown-content">
+    <a href="music.html">Music</a>
+    <a href="videos.html">Videos</a>
+    <a href="hobbies.html">Hobbies</a>
+            </div>
+</div>
+</center>
+
+<center><h3 style="font-size:40px; margin:10;"><b>Gaming<b><h3></center>
+<center>
+
+<div class="animation">
+<div class="container1">
+        <div class="column">
+	    <video width="350" height="360" controls>
+	    <source src="../hobbies/gaming/jhin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+	    </video>
+            <p><i>Outplayed</i></p>
+        </div>
+        <div class="column">
+            <video width="350" height="360" controls>
+	    <source src="../hobbies/gaming/aplebyos.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+	    </video>
+            <p><i>Once again, Supp diff</i></p>
+        </div>
+        <div class="column">
+            <video width="350" height="360" controls>
+	    <source src="../hobbies/gaming/3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+	    </video>
+            <p><i>Pressure cooked Sven</i></p>
+</div>
+</div>
+</div>
+<a style="font-size: 20;" href="gaming.html">1</a><a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a style="font-size: 20;" href="gaming2.html">2</a><a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a style="font-size: 20;" href="gaming3.html">3</a><a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a style="font-size: 20;" href="gaming4.html">4</a><a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+
+
+<footer>
+
+<p>© Ephraim Jeremy Taclan - All rights reserved | 2023</p>
+<a href="https://ourdisclaimer.com/?i=ejzeltron.github.io"><img src="https://ourdisclaimer.com/ourdisclaimer.gif" width="80" height="15" alt="Our Disclaimer" /></a>
+</footer>
+</body>
+</html>
